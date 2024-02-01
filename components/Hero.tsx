@@ -71,7 +71,7 @@ export default function Hero() {
               }
               title="Scroll Down"
             >
-              About Us
+              about us
             </button>
           </div>
         )}
@@ -111,7 +111,7 @@ export default function Hero() {
               marginBottom: "200px",
             }}
           >
-            Our team is fully engaged in our current internal projects, each
+            Our team is currently fully engaged in our current internal projects, each
             member passionately striving for innovation and excellence. At this
             time, we are dedicated to maximizing our efforts on these
             initiatives and are not taking on new projects. Thank you for your
