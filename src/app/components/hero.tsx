@@ -11,7 +11,7 @@ export default function Hero() {
         <img
           src={logoPath}
           alt="Yeager GmbH"
-          className="w-1/6 object-contain hover:scale-105 transition-all duration-200 ease-in-out hover:shadow-lg hover:ring-4"
+          className="w-1/6 object-contain hover:scale-105 transition-all duration-200 ease-in-out hover:shadow-lg"
         />
         <div className="flex w-full h-full items-center justify-center shadow-lg">
           <Spline scene="https://prod.spline.design/AYItJrbMLHQRViW0/scene.splinecode" />
