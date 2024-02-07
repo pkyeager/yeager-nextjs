@@ -6,7 +6,7 @@ import Link from "next/link";
 const Footer: React.FC = () => {
   const handleLinkClick = (event: React.MouseEvent) => {
     event.preventDefault();
-    alert("These links are under development.");
+    alert("Under Development. Coming Soon!");
   };
 
   return (
@@ -16,28 +16,20 @@ const Footer: React.FC = () => {
           <a className="mb-2 text-sm">Legal Notice</a>
         </Link>
 
-        <Link legacyBehavior href="/terms" onClick={handleLinkClick}>
-          <a className="mb-2 text-sm">Terms of Service</a>
+        <Link legacyBehavior href="/terms">
+          <a className="mb-2 text-sm" onClick={handleLinkClick}>Terms of Service</a>
         </Link>
-        <Link legacyBehavior href="/privacy" onClick={handleLinkClick}>
-          <a className="mb-2 text-sm">Privacy</a>
+        <Link legacyBehavior href="/privacy">
+          <a className="mb-2 text-sm" onClick={handleLinkClick}>Privacy</a>
         </Link>
-        <Link legacyBehavior href="/contact" onClick={handleLinkClick}>
+        <Link legacyBehavior href="mailto:management@yeager.gmbh">
           <a className="mb-2 text-sm">Contact Us</a>
         </Link>
-        <Link
-          legacyBehavior
-          href="https://twitter.com/yourusername"
-          onClick={handleLinkClick}
-        >
-          <a className="mb-2 text-sm">X</a>
+        <Link  legacyBehavior href="https://twitter.com/yourusername">
+          <a className="mb-2 text-sm" onClick={handleLinkClick}>X</a>
         </Link>
-        <Link
-          legacyBehavior
-          href="https://instagram.com/yourusername"
-          onClick={handleLinkClick}
-        >
-          <a className="mb-2 text-sm">Instagram</a>
+        <Link legacyBehavior href="https://instagram.com/yourusername">
+          <a className="mb-2 text-sm" onClick={handleLinkClick}>Instagram</a>
         </Link>
       </div>
       <div className="mt-4">
