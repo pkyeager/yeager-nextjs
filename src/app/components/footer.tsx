@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
         </a>
       </div>
       <div className="mt-4">
-        <p className="text-xs">© {new Date().getFullYear()} Yeager GmbH</p>
+        {/* <p className="text-xs">© {new Date().getFullYear()} Yeager GmbH</p> */}
       </div>
     </footer>
   );

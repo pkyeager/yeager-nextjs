@@ -1,11 +1,45 @@
+/* eslint-disable @next/next/no-img-element */
 // pages/legal.tsx
 import React from "react";
+import Link from "next/link";
 
 const LegalNotice: React.FC = () => {
+  const logoPath = "/yeager-logo.png";
   return (
-    <div className="bg-gray-950 flex-1">
+    <div
+      style={{
+        backgroundColor: "#030712",
+        color: "#FFFFFF",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100vh",
+        width: "100vw",
+        position: "fixed",
+        top: 0,
+        left: 0,
+      }}
+    >
+      <Link
+        href="/"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "100%",
+        }}
+      >
+        <img
+          src={logoPath}
+          alt="Yeager GmbH"
+          style={{
+            width: "16.667%",
+            cursor: "pointer",
+          }}
+        />
+      </Link>
       <h1>Legal Notice</h1>
-
       <h2>Information pursuant to Sect. 5 German Telemedia Act (TMG)</h2>
       <p>
         Yeager GmbH
